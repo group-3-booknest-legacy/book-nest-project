@@ -1,0 +1,46 @@
+/* creating project colour palette */
+:root {
+	--purple: #5534A5;
+	--dark-blue: #2155CD;
+	--light-blue: #0AA1DD;
+	--violet: #A85CF9;
+	--pink: #F473B9;
+	--aqua: #50BFC3;
+    --white: #FFFFFF;
+	--light-grey: #CDD4D9;
+	--dark-grey: #7B8E9B;
+}
+
+/* removing all margins/padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* declaring font */
+body{
+    font-family: sans-serif;
+}
+
+/* container for flexbox display. Holds navbar, main page and footer */
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0;
+}
+
+/* container to hold main page */
+.pageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 75vh;
+    justify-content: baseline;
+    /* padding-top: 1.5rem; */
+    gap: 1.5rem;
+}
