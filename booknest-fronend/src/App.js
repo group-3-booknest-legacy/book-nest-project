@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 // importing Navbar Link Components
 import Navbar from './components/Navbar';
+import Login from './components/Login';
 import Home from './components/Home';
 import WriteReview from './components/WriteReview';
 import MyBooks from './components/MyBooks';
@@ -28,6 +29,10 @@ function App() {
       {/* declaring each route. The path needs to be the same as the to = "" in the Navbar Component */}
       <Route 
       path='/' element= {<Home />}>
+      </Route>
+
+      <Route 
+      path='/login' element= {<Login />}>
       </Route>
 
       <Route 
