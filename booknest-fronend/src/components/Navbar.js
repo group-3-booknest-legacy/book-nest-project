@@ -9,6 +9,7 @@ function Navbar() {
             <ul className = 'navlist'>
             <li className = "navbar--items"> <Logo /> </li>
             <li><Link className = 'navbar--items' to='/'>Home</Link></li>
+            <li><Link className = 'navbar--items' to='/register'>Register</Link></li>
             <li><Link className = 'navbar--items' to='/login'>Login</Link></li>
             <li><Link className = 'navbar--items' to='/mybooks'>MyBooks</Link></li>
             <li><Link className = 'navbar--items' to='/review'>Write Review</Link></li>

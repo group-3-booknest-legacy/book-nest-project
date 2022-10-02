@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 // importing Navbar Link Components
 import Navbar from './components/Navbar';
-import Login from './components/Login';
+import Register from './components/Register';
+import Login from "./components/login"
 import Home from './components/Home';
 import WriteReview from './components/WriteReview';
 import MyBooks from './components/MyBooks';
@@ -15,6 +16,7 @@ import LogOut from './components/LogOut';
 // importing components outside navbar
 import Footer from './components/Footer';
 import "../src/css/App.css";
+
 
 
 function App() {
@@ -32,8 +34,13 @@ function App() {
       </Route>
 
       <Route 
+      path='/register' element= {<Register />}>
+      </Route>
+
+      <Route 
       path='/login' element= {<Login />}>
       </Route>
+
 
       <Route 
       path='/review' element={<WriteReview />}> 

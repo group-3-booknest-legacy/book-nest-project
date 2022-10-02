@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+
 import SoMeIcons from './SocialMedia'
 import '../css/Footer.css'
 

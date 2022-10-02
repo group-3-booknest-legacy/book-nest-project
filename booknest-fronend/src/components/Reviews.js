@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+
 import ReviewsList from "./ReviewsList"
 
 function Reviews() {

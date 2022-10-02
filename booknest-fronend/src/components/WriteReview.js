@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+
 import ReviewCardReview from './ReviewCardReview';
 
 function Categories() {
