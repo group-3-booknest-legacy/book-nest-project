@@ -1,0 +1,81 @@
+/* creating project colour palette */
+:root {
+	--purple: #5534A5;
+	--dark-blue: #2155CD;
+	--light-blue: #0AA1DD;
+	--violet: #A85CF9;
+	--pink: #F473B9;
+	--aqua: #50BFC3;
+    --white: #FFFFFF;
+	--light-grey: #CDD4D9;
+	--dark-grey: #7B8E9B;
+}
+
+/* removing all margins/padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* declaring font */
+body{
+    font-family: sans-serif;
+}
+
+/* sizing the logo */
+.logo-image{
+	width: 8rem;
+	margin-top: 0rem;
+	}
+
+/* container holding the items in the navbar for flexbox alignment purposes */
+.navlist{
+    justify-content: flex-end;
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0px 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+	padding-right: 4rem;
+    /* removes bullets from list items */
+    list-style: none;
+}
+
+/* styling the navbar items */
+.navbar--items{
+    list-style: none;
+    margin-right: 2rem;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+/* style the first li item in the navbar ul */
+.navbar--items:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+/* removing the underline displayed with the link */
+.navbar--items a{
+    text-decoration: none;
+    list-style: none;	
+}
+
+/* giving the logout item a different colour */
+.logout{
+    margin-left: 4rem;
+    margin-right: 2rem;
+    color:  var(--dark-grey);
+    list-style: none;
+}
+
+/* adding the effect when the mouse hovers over one of the links in the navbar */
+.navbar--items:hover{
+    text-decoration: none;
+    color:var(--pink);
+    list-style: none;
+}

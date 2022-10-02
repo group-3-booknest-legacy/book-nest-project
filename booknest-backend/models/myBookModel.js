@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // creating new Schema
 const myBookSchema = new Schema (
     {
-  user: {type: String, required: true, lowercase: true, trim: true},
+  // user: {type: String, required: true, lowercase: true, trim: true},
   title: String,
   author: String,
   genre: String,
@@ -21,4 +21,4 @@ const myBookSchema = new Schema (
 // assigning Schema and model to a variable
 const MyBook = mongoose.model("MyBook", myBookSchema); 
 
-module.exports = MyBook; 
+module.exports = MyBook;  

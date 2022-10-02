@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 
 
 
+
 require('dotenv').config();
 
 // create express server
@@ -19,10 +20,11 @@ app.use(express.json());
 // require router path for server
 const MyBookRouter = require('../booknest-backend/routes/myBooksRoute');
 const ReviewRouter = require("../booknest-backend/routes/reviewRoute")
-
+const userRouter=require(".//routes/userRoute")
 // use the files when requested
 app.use('/', MyBookRouter);
 app.use('/', ReviewRouter);
+app.use('/', userRouter)
 
 // start server
 app.listen(port, () => {

@@ -1,0 +1,45 @@
+/* creating project colour palette */
+:root {
+	--purple: #5534A5;
+	--dark-blue: #2155CD;
+	--light-blue: #0AA1DD;
+	--violet: #A85CF9;
+	--pink: #F473B9;
+	--aqua: #50BFC3;
+    --white: #FFFFFF;
+	--light-grey: #CDD4D9;
+	--dark-grey: #7B8E9B;
+}
+
+/* removing all margins/padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* declaring document font */
+body{
+    font-family: sans-serif;
+}
+
+/* footer container as flexbox to display alignment in items */
+.footer{
+    display:flex;
+    align-self: flex-end;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--light-grey);
+    color:var(--purple);
+    font-size: 0.75rem;
+}
+
+/* Social Media Icons at top of footer */
+.SoMe-Icons{
+    width: 9rem;
+    margin-top: .5rem;
+}

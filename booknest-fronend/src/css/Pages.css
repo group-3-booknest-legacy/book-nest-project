@@ -1,0 +1,73 @@
+/* creating project colour palette */
+:root {
+	--purple: #5534A5;
+	--dark-blue: #2155CD;
+	--light-blue: #0AA1DD;
+	--violet: #A85CF9;
+	--pink: #F473B9;
+	--aqua: #50BFC3;
+    --white: #FFFFFF;
+	--light-grey: #CDD4D9;
+	--dark-grey: #7B8E9B;
+}
+
+/* removing all margins/padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* declaring font */
+body{
+    font-family: sans-serif;
+}
+
+.pageContainer{
+display: flex;
+justify-content: flex-start;
+align-items: left;
+flex-direction: row;
+}
+
+.pageHeader {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 4rem;
+    align-self: start;
+    padding-top: 2rem;
+}
+
+.lt-blue{
+    color: var(--light-blue);
+}
+
+.drk-blue{
+    color: var(--dark-blue)
+}
+
+.lt-grey{
+    color: var(--light-grey)
+}
+
+.drk-grey{
+    color: var(--dark-grey)
+}
+
+.purple{
+    color: var(--purple)
+}
+
+.violet{
+    color: var(--violet)
+}
+
+.pink{
+    color: var(--pink)
+}
+
+.aqua{
+    color: var(--aqua)
+}
+

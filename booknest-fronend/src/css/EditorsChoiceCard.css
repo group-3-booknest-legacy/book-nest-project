@@ -1,0 +1,92 @@
+/* creating project colour palette */
+:root {
+	--purple: #5534A5;
+	--dark-blue: #2155CD;
+	--light-blue: #0AA1DD;
+	--violet: #A85CF9;
+	--pink: #F473B9;
+	--aqua: #50BFC3;
+    --white: #FFFFFF;
+	--light-grey: #CDD4D9;
+	--dark-grey: #7B8E9B;
+}
+
+/* removing all margins/padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* declaring font */
+body{
+    font-family: sans-serif;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90vw;
+}
+
+/* styling the card / outline */
+.card{
+    justify-content: flex-start;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.8rem;
+    font-size: 0.85rem;
+    width: 25vw;
+    height: 45vh;
+    padding: 1rem;
+    border: 2px solid var(--dark-grey);
+    border-radius: 30px;
+}
+
+/* .bookCover{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 15vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--light-grey);
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(10, 161, 221, 0.2);
+    width: 25vw;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.title{
+    margin-top: 0.3rem;
+    font-weight: 800;
+}
+
+.bookInfo{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+h5{
+    font-size: 1rem;
+}
+
+.addBookBtn{
+    width: 15vw;
+    height: 4vh;
+    background-color: var(--light-blue);
+    color:white;
+    font-weight: 700;
+    border:none;
+    border-radius: 10px;
+} */

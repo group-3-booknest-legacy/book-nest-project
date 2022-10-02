@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // creating new Schema
 const ReviewSchema = new Schema (
   {
-user: {type: String, required: true, lowercase: true, trim: true},
+// user: {type: String, required: true, lowercase: true, trim: true},
 title: String,
 author: String,
 genre: String,
