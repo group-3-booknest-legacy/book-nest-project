@@ -6,7 +6,7 @@ import "../css/App.css"
 function ReviewCardReview() {
    const [input, setInput] = useState({
     title: "", 
-    content: ""
+    review: ""
    })
   
 
@@ -24,7 +24,7 @@ function ReviewCardReview() {
     event.preventDefault(); 
     const newReview = {
       title:input.title, 
-      content: input.content
+      review: input.review
     }
     axios.post("http://localhost:5000/review/add", newReview)
     .then((res)=> {
@@ -57,12 +57,12 @@ function ReviewCardReview() {
         <div className = 'form-group'>
         <textarea 
         className = 'form-control' 
-        name="content" 
+        name="review" 
         cols="50" 
         rows="10" 
         onChange={handleChange} 
         placeholder="write your review" 
-        value={input.content}>
+        value={input.review}>
         </textarea>
         </div>
 

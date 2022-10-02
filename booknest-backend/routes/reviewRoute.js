@@ -3,7 +3,7 @@ let Review = require ("../models/reviewModel");
 
 
 //  handles the route to get all the books in My Books
-router.route('/review').get((req, res) => {
+router.route('/').get((req, res) => {
     Review.find()
     .then(reviews => res.json(reviews))
     .catch(err => res.status(400).json('Error: '+ err));
@@ -11,14 +11,14 @@ router.route('/review').get((req, res) => {
 
 //  handles http add a book to MyBooks (post) request
 router.route('/review/add').post((req, res) =>{
-    const user = req.body.user;
+    // const user = req.body.user;
     const title = req.body.title;
     const author = req.body.author;
     const review = req.body.review;
     const rating = req.body.rating;
 
     const newReview = new Review({
-       user,
+    //    user,
        title,
        author,
        review,

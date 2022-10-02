@@ -27,7 +27,8 @@ function handleClick(event){
     event.preventDefault();
     const newBook ={
         title: input.title,
-        author: input.author
+        author: input.author,
+        genre:input.genre
     }
     axios.post("http://localhost:5000/add", newBook)
     .then((res)=> {

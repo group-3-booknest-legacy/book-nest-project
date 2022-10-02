@@ -11,14 +11,14 @@ router.route('/').get((req, res) => {
 
 //  handles http add a book to MyBooks (post) request
 router.route('/add').post((req, res) => {
-    const user = req.body.user;
+    // const user = req.body.user;
     const title = req.body.title;
     const author = req.body.author;
     const genre = req.body.genre;
     const favourite = req.body.favourite;
 
     const newMyBook = new MyBook({
-        user,
+        // user,
         title,
         author,
         genre,
