@@ -10,7 +10,7 @@ const connectionParams = {
 };
 
 // uri variable which holds MongoDB Atlas connection URL
-const uri = process.env.MongoDB_URI;
+const uri = "mongodb://localhost:27017/";
 
 
 // establish the connection between the server and MongoDB Atlas

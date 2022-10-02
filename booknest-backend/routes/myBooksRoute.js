@@ -51,4 +51,19 @@ router.route('/:id').delete((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/:id').put((req, res) => {
+    let book = MyBook.findByIdAndUpdate(req.params.id, {user:req.body.user, title:req.body.title, author:req.body.author, genre:req.body.genre, favourite:req.body.favourite}, function(err, data) {
+        if(err){
+                req.flash('error', 'Something Goes Wrong!');
+                res.status(400).json('Error: ' + err);
+        }
+        else{
+          res.json('Book has been updated successfully!');
+          
+        }
+}); 
+    
+});
+
+
 module.exports = router;
